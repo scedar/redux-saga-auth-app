@@ -60,25 +60,19 @@ redux-saga-auth-app/
 
 ## Run the project
 
-run in dev mode
 ```
 npm start
 ```
 
 ## Building the project
 
-run build
 ```
 npm run build
 ```
 
-
-
-Open the index.html on a browser
-
 ## License
 
-This project is licensed under the ISC License (ISC) 
+This project is licensed under the MIT License (MIT) 
 
 
 

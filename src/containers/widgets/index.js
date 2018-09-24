@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { reduxForm, Field } from 'redux-form'
 import { connect } from 'react-redux'
 
-import Messages from '../notifications/Messages'
-import Errors from '../notifications/Errors'
+import Messages from '../../components/Messages/Messages'
+import Errors from '../../components/Errors/Errors'
 
 import { widgetCreate, widgetRequest } from './actions'
 

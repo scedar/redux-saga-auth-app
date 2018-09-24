@@ -4,23 +4,24 @@ import {applyMiddleware, createStore, compose} from 'redux'
 import {createBrowserHistory} from 'history';
 import {Provider} from 'react-redux'
 import createSagaMiddleware from 'redux-saga'
-//  import {Router, Route, browserHistory} from 'react-router'
 
 import {
     Router,
-    Route,
     Switch
 } from 'react-router-dom'
 
 // Import all of our components
-import App from './App'
-import './index.css'
+import AppRoute from './components/AppRoute/AppRoute'
+import routes from './routes/routes'
+
+import './resources/index.css'
 
 // Import the index reducer and sagas
-import IndexReducer from './index-reducer'
-import IndexSagas from './index-sagas'
+import IndexReducer from './config/index-reducer'
+import IndexSagas from './config/index-sagas'
 
-import registerServiceWorker from './registerServiceWorker';
+import registerServiceWorker from './config/registerServiceWorker';
+
 
 // Setup the middleware to watch between the Reducers and the Actions
 const sagaMiddleware = createSagaMiddleware();
@@ -54,7 +55,11 @@ ReactDOM.render(
     <Provider store={store}>
         <Router history={hist}>
             <Switch>
-                <Route path="/" component={App}/>
+                {
+                    routes.map((route, key) => (
+                        <AppRoute exact path={route.path} component={route.component} layout={route.layout}/>
+                    ))
+                }
             </Switch>
         </Router>
     </Provider>

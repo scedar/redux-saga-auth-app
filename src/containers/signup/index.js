@@ -5,8 +5,8 @@ import {connect} from 'react-redux'
 import {Link} from 'react-router-dom'
 
 // Import the helpers.. that we'll make here in the next step
-import Messages from '../notifications/Messages'
-import Errors from '../notifications/Errors'
+import Messages from '../../components/Messages/Messages'
+import Errors from '../../components/Errors/Errors'
 
 import signupRequest from './actions'
 

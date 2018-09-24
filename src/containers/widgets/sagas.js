@@ -1,5 +1,5 @@
 import {call, put, takeLatest} from 'redux-saga/effects'
-import {handleApiErrors} from '../lib/api-errors'
+import {handleApiErrors} from '../../utils/api-errors'
 import {
     WIDGET_CREATING,
     WIDGET_REQUESTING

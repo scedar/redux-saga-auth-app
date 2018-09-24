@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
 import { reducer as form } from 'redux-form'
 
-import client from './client/reducer'
-import signup from './signup/reducer'
-import login from './login/reducer'
-import widgets from './widgets/reducer'
+import client from '../containers/client/reducer'
+import signup from '../containers/signup/reducer'
+import login from '../containers/login/reducer'
+import widgets from '../containers/widgets/reducer'
 
 const IndexReducer = combineReducers({
     login,

@@ -1,4 +1,4 @@
-import {setClient} from '../client/actions'
+import {setClient} from '../containers/client/actions'
 
 function checkAuthorization(dispatch) {
     // attempt to grab the token from localstorage

@@ -2,10 +2,10 @@ import {take, fork, cancel, call, put, cancelled} from 'redux-saga/effects'
 
 // We'll use this function to redirect to different routes based on cases
 //import {browserHistory} from 'react-router'
-import {hist} from "../index"
+import {hist} from "../../index"
 
 // Helper for api errors
-import {handleApiErrors} from '../lib/api-errors'
+import {handleApiErrors} from '../../utils/api-errors'
 
 // Our login constants
 import {

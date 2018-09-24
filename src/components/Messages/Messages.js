@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 // Iterate over each message object and print them
 // in an unordered list
 const Messages = (props) => {
-    const { messages } = props
+    const { messages } = props;
     return (
         <div>
             <ul>

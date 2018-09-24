@@ -9,7 +9,11 @@ The full overviews can be found here:
 * [React and Redux Sagas Authentication App Tutorial Part 2](http://start.jcolemorrison.com/react-and-redux-sagas-authentication-app-tutorial-part-2/)
 * [React and Redux Sagas Authentication App Tutorial Part 3](http://start.jcolemorrison.com/react-and-redux-sagas-authentication-app-tutorial-part-3/)
 
-This application however doesn't include the Authorization feature outlined in the above articles.
+This application is an improvement of the previous version with a High Order Component to manage Authorization with a much better file structure. This application also uses React Router v4 and can manage to accomodate different Page Layouts.
+All thanks to:
+
+* [Multiple layouts with React Router v4 ](https://gist.github.com/avinmathew/e82fe7e757b20cb337d5219e0ab8dc2c)
+
 
 The api being used with it can be found here:
 
@@ -44,14 +48,21 @@ After creation, your project should look like this:
 redux-saga-auth-app/    
     node_modules/
     public/
-    src/        
-        signup/
-            action.js                
-            constants.js                
-            index.js                
-            reducer.js                
-            sagas.js                
-        ...
+    src/
+        components
+        containers    
+            signup/
+                action.js                
+                constants.js                
+                index.js                
+                reducer.js                
+                sagas.js                
+            ...
+        layouts
+        config
+        utils
+        routes
+        resources
         index.js
     .gitignore
     package.json

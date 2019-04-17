@@ -4,7 +4,6 @@ import {applyMiddleware, createStore, compose} from 'redux'
 import {createBrowserHistory} from 'history';
 import {Provider} from 'react-redux'
 import createSagaMiddleware from 'redux-saga'
-//  import {Router, Route, browserHistory} from 'react-router'
 
 import {
     Router,
@@ -13,12 +12,14 @@ import {
 } from 'react-router-dom'
 
 // Import all of our components
-import App from './App'
+//import App from './App'
+
+import App from './routes/index';
 import './index.css'
 
 // Import the index reducer and sagas
-import IndexReducer from './index-reducer'
-import IndexSagas from './index-sagas'
+import IndexReducer from './store/index-reducer'
+import IndexSagas from './store/index-sagas'
 
 import registerServiceWorker from './registerServiceWorker';
 
